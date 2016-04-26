@@ -3,7 +3,7 @@ import {Component} from 'angular2/core';
 @Component({
     selector: 'app-button',
     template: `
-        <button class="button"><ng-content></ng-content></button>
+        <button class="button" (click)=onClick()><ng-content></ng-content></button>
     `,
     styles: [`
         button {
@@ -12,5 +12,8 @@ import {Component} from 'angular2/core';
     `]
 })
 
-export class AppButton {    
+export class AppButton {  
+    onClick() {
+        alert("Hello from button");
+    }  
 }

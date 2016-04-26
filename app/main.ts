@@ -4,4 +4,3 @@ import {AppAvatarComponent} from './components/avatar/component';
 import {AppButton} from './components/button/component';
 
 bootstrap(AppComponent, [AppAvatarComponent, AppButton]);
-bootstrap(AppAvatarComponent);
