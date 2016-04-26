@@ -10,27 +10,7 @@ import {HeroModel} from '../../models/hero.model';
             <hr />
         </div>
     `,
-    styles: [`
-        ul {
-            margin: 0;
-            padding: 0;
-        }
-        
-        li {
-            list-style: none;
-            margin: 0;
-            padding:0.5rem;
-            cursor:pointer;
-        }
-        
-        li:hover {
-            background-color: rgba(200,200,255,0.8);
-        }
-        
-        li.selected {
-            background-color: rgba(255,200,200,0.8);
-        }
-    `]
+    styles: [``]
 })
 
 export class AppHeroDetailComponent {
