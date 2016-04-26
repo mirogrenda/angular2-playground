@@ -1,6 +1,7 @@
 import {Component} from 'angular2/core';
 import {HeroModel} from './models/hero.model';
 import {AppHeroDetailComponent} from './components/hero-detail/component';
+import {AppButton} from './components/button/component';
 
 var HEROES: HeroModel[] = [
         { "id": 11, "name": "Mr. Nice" },
@@ -25,11 +26,13 @@ var HEROES: HeroModel[] = [
                 (click)=onSelect(hero)
                 [class.selected]="hero === selectedHero"
             >{{hero.id}} | {{hero.name}}</li>
-        </ul>
+        </ul>        
+        
+        <hr />        
+        <app-hero-detail [hero]="selectedHero"></app-hero-detail>
         
         <hr />
-        
-        <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+        <app-button>APP MAIN BUTTON</app-button>
     `,
     styles: [`
         ul {
@@ -52,7 +55,7 @@ var HEROES: HeroModel[] = [
             background-color: rgba(255,222,222,0.8);
         }
     `],
-    directives: [AppHeroDetailComponent]
+    directives: [AppHeroDetailComponent, AppButton]
 })
 
 export class AppComponent {

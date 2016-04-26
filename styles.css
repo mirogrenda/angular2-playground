@@ -2,3 +2,13 @@
     font: 16px/1 monospace;
     background-color: azure;
 }
+
+.button {
+    min-width: 36px;
+    min-height: 36px;
+    line-height: 1rem;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    color: rgba(255,255,255,1);
+    cursor: pointer;
+}
